@@ -1,0 +1,110 @@
+.loginContainer{
+    height: calc(100vh - var(--nav-height));
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.loginContainer > .loginForm{
+    height: 100%;
+    width: 50rem;
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+
+.loginContainer > .loginForm > label{
+    width: 100%;
+    margin-bottom: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginContainer > .loginForm > label:last-child{
+    margin-bottom: 0;
+}
+
+.loginContainer > .loginForm > label > h2{
+    width: 100%;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.loginContainer > .loginForm > label > input{
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 1px solid #b2beb5;
+}
+
+.loginContainer > .loginForm > label > input:focus::placeholder{
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+.loginContainer > .loginForm > label.moreOptions{
+    display: flex;
+    justify-content: space-between;
+}
+
+.loginContainer > .loginForm > label.moreOptions > div:first-child{
+    display: flex;
+    align-items: center;
+}
+
+.loginContainer > .loginForm > label.moreOptions > div:first-child > input{
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-right: 1rem;
+    cursor: pointer;
+    box-shadow: none;
+}
+
+.loginContainer > .loginForm > label.moreOptions > div:first-child > span{
+    font-size: 1.25rem;
+}
+
+.loginContainer > .loginForm > label.moreOptions > div:last-child{
+    font-size: 1.25rem;
+    color: blue;
+}
+
+.loginContainer > .loginForm > button{
+    height: 4rem;
+    width: 12rem;
+    cursor: pointer;
+    border-radius: 5rem;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
+    background-color: #f4fae8;
+}
+
+/******************** Media Query ********************/
+
+/* large tablet screen */
+@media (max-width: 992px) {
+   
+}
+
+/* small tablet screen */
+@media (max-width: 768px) {
+   
+}
+
+/* large mobile screen */
+@media (max-width: 576px) {
+ 
+}
+
+/* small mobile screen */
+@media (max-width: 480px) {
+ 
+}
+
+/* extra small mobile screen */
+@media (max-width: 360px) {
+ 
+}

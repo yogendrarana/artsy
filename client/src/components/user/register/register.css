@@ -1,0 +1,121 @@
+.registerContainer{
+    height: calc(100vh - var(--nav-height));
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.registerContainer > .registerForm{
+    height: 100%;
+    width: 45rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+
+.registerContainer > .registerForm > label{
+    width: 100%;
+    margin-bottom: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.registerContainer > .registerForm > label:has(input[type='checkbox']){
+    justify-content: flex-start;
+    margin-bottom: 3rem;
+    font-size: 1.25rem;
+}
+.registerContainer > .registerForm > label > input[type='checkbox']{
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.registerContainer > .registerForm > label:last-child{
+    margin-bottom: 0;
+}
+
+.registerContainer > .registerForm > label > h2{
+    width: 100%;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.registerContainer > .registerForm > label > input{
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 1px solid #b2beb5;
+}
+
+.registerContainer > .registerForm > label > input:focus::placeholder{
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+.registerContainer > .registerForm > label > p{
+    font-size: 1.3rem;
+    font-weight: 100;
+}
+
+.registerContainer > .registerForm > label > select{
+    margin-left: auto;
+    padding: 1rem;
+    border: none;
+    background-color: #f0f0f0;
+    border-radius: 0.75rem;
+}
+
+.registerContainer > .registerForm > label > .isCreator > input[type='checkbox']{
+    cursor: pointer;
+}
+
+.registerContainer > .registerForm > button{
+    height: 4rem;
+    width: 10rem;
+    cursor: pointer;
+    border-radius: 5rem;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
+    background-color: #f4fae8;
+}
+
+.registerContainer > .registerForm > label > .isCreator {
+    width: 100%;
+}
+
+.registerContainer > .registerForm > label > .isCreator > span {
+    margin-left: 1rem;
+    font-size: 1.5rem;
+}
+
+/******************** Media Query ********************/
+
+/* large tablet screen */
+@media (max-width: 992px) {
+   
+}
+
+/* small tablet screen */
+@media (max-width: 768px) {
+   
+}
+
+/* large mobile screen */
+@media (max-width: 576px) {
+ 
+}
+
+/* small mobile screen */
+@media (max-width: 480px) {
+ 
+}
+
+/* extra small mobile screen */
+@media (max-width: 360px) {
+ 
+}

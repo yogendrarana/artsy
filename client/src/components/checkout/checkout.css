@@ -1,0 +1,32 @@
+.checkoutContainer > .checkoutBanner{
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.checkoutContainer > .checkoutBanner > h2{
+    font-size: 3rem;
+    color: rgba(0, 0, 0, 0.75);
+}
+
+.checkoutContainer > .checkoutBanner > div{
+    margin-top: 1rem;
+    font-size: 1.25rem;
+}
+
+.checkoutContainer > .checkoutBanner > div > span{
+    margin-left: 1rem;
+}
+/******************** Steps ********************/
+.checkoutContainer > .forms > .step{
+    padding: 3rem 0;
+}
+
+.checkoutContainer > .forms > .step.disabled{
+    opacity: 0.25;
+    pointer-events: none;
+}

@@ -1,0 +1,50 @@
+.orderItemsDialog > div > div {
+    width: 100rem;
+}
+
+.orderItemsDialog > div > div > .orderItemsContainer {
+    padding: 1rem;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.orderItemsDialog > div > div > .orderItemsContainer > h2 {
+    font-size: 2rem;
+}
+
+/******************** User List ********************/
+.orderItemsDialog > div > div > .orderItemsContainer > table {
+    border-spacing: 0 0;
+    border: 1px solid #ededed;
+}
+
+.orderItemsDialog > div > div > .orderItemsContainer>table>thead>tr>th,
+.orderItemsDialog > div > div > .orderItemsContainer>table>tbody>tr>td {
+    padding: 1rem;
+    text-align: justify;
+    font-size: 1.25rem;
+    background-color: #ededed;
+}
+
+.orderItemsDialog > div > div > .orderItemsContainer>table>tbody>tr>td {
+    background-color: white;
+    border-bottom: 1px solid #ededed;
+}
+
+.orderItemsDialog > div > div > .orderItemsContainer>table>tbody>tr>td>img {
+    height: 8rem;
+    width: 12.5rem;
+    min-width: 12.5rem;
+    object-fit: cover;
+}
+
+
+/******************** Media Query ********************/
+
+/* large mobile screen */
+@media (max-width: 576px) {
+    .orderItemsDialog > div > div > .orderItemsContainer {
+        overflow-x: auto;
+    }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "artsy",
+  "version": "1.0.0",
+  "main": "index.js",
+  "private": true,
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "dev": "concurrently \"cd client && npm run dev\" \"cd server && npm run dev\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

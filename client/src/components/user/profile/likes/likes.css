@@ -1,0 +1,58 @@
+/******************** Table********************/
+.likesContainer > table{
+    width: 100%;
+    border-spacing: 0 0;
+    border: 1px solid #ededed;
+}
+
+.likesContainer > table > thead > tr > th,
+.likesContainer > table > tbody > tr > td{
+    padding: 1rem;
+    text-align: justify;
+    font-size: 1.25rem;
+    background-color:#ededed;
+}
+
+.likesContainer > table > tbody > tr > td{
+    background-color: white;
+    border-bottom: 1px solid #ededed;
+}
+
+.likesContainer > table > tbody > tr > td > img{
+    height: 8rem;
+    width: 12.5rem;
+    min-width: 12.5rem;
+    object-fit: cover;
+}
+
+.likesContainer > table > tbody > tr > td > i{
+    font-size: 1.5rem;
+    color: red;
+    cursor: pointer;
+}
+
+.likesContainer > table > tbody > tr > td > i:hover{
+    animation-name: var(--trash-animation);
+	animation-duration: 0.3s;
+	animation-iteration-count: 3;
+}
+
+/******************** No Likes********************/
+
+.likesContainer > .noLikes{
+    height: 25rem;
+    width: 100%;
+    font-size: 1.5rem;
+    display: grid;
+    place-items: center;
+    border: 1px solid #ededed;
+}
+
+/******************** Media Query ********************/
+
+/* extra small mobile screen */
+ @media (max-width: 576px) {
+    .likesContainer {
+        overflow-x: auto;
+    }
+}

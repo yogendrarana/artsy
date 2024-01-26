@@ -1,0 +1,149 @@
+.profileSection > .profileCard {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px solid #b2beb5; */
+}
+
+/******************** avatar ********************/
+.profileSection > .profileCard > .avatar{
+    height: 15rem;
+    width: 15rem;
+    padding: 0.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #b2beb5;
+    border-radius: 50%;
+    position: relative;
+}
+
+.profileSection > .profileCard > .avatar > label{
+    position: absolute;
+    height: 2.5rem;
+    width: 2.5rem;
+    padding: 0.25rem;
+    border-radius: 50%;
+    bottom: 1rem;
+    right: 1rem;
+    display: grid;
+    place-items: center;
+    background-color: white;
+    cursor: pointer;
+}
+
+.profileSection > .profileCard > .avatar > label > i{
+    border: 1px solid #b2beb5;
+    border-radius: 50%;
+    padding: 0.5rem;
+}
+
+.profileSection > .profileCard > .avatar > label > input{
+    display: none;
+}
+
+.profileSection > .profileCard > .avatar > p{
+    font-size: 5rem;
+}
+
+.profileSection > .profileCard > .avatar > img{
+    height:100%;
+    width:100%;
+    object-fit: cover;
+}
+
+/******************** Name ********************/
+
+.profileSection > .profileCard > .name{
+    margin-top: 1rem;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.profileSection > .profileCard > .role,
+.profileSection > .profileCard > .email{
+    margin-top: 0.5rem;
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+/******************** Social ********************/
+
+.profileSection > .profileCard > .social{
+    margin: 2rem 0;
+}
+
+.profileSection > .profileCard > .social > a:not(:last-child){
+    margin-right: 1.5rem;
+}
+
+.profileSection > .profileCard > .social > a > i{
+    font-size: 3rem;
+}
+
+/******************** buttons ********************/
+
+.profileSection > .profileCard > .buttons > button{
+    height: 4rem;
+    width: 10rem;
+    cursor: pointer;
+    background-color: aliceblue;
+    border-radius: 5rem;
+    box-shadow: 0 0 5px 0.25px rgba(0, 0, 0, 0.25);
+}
+
+.profileSection > .profileCard > .buttons > button:not(:last-child){
+    margin-right: 1.5rem;
+}
+
+.profileSection > .profileCard > .buttons > button:hover{
+    color: white;
+    background-color: #2d3448;
+    transition: all 0.25s ease-in-out;
+}
+
+.profileSection > .profileCard > .buttons > button:last-child:hover{
+    color: white;
+    background-color: purple;
+    transition: all 0.25s ease-in-out;
+}
+
+/******************** Profile Options ********************/
+
+.profileSection > .profileOptions > nav{
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #ededed;
+}
+
+.profileSection > .profileOptions > nav > a{
+    padding: 2rem;
+    font-size: 2rem;
+}
+
+.profileSection > .profileOptions > nav > a.active{
+    font-weight: bolder;
+    border-bottom: 1px solid black;
+}
+
+/******************** Media Query ********************/
+/* large mobile screen */
+@media (max-width: 576px) {
+    .profileSection > .profileOptions{
+        padding: 1.5rem;
+    }
+
+    .profileSection > .profileOptions > ul > li{
+        font-size: 1.75rem;
+    }
+}
+
+/* extra small mobile screen */
+@media (max-width: 360px) {
+    .profileSection > .profileOptions > ul > li{
+        font-size: 1.35rem;
+        text-align: center;
+    }
+}
