@@ -1,6 +1,6 @@
 import axios from 'axios'
 import { useState } from 'react'
-import { toast } from 'react-toastify'
+import { toast } from 'react-hot-toast'
 
 
 // import css
