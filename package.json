@@ -4,11 +4,11 @@
   "main": "index.js",
   "private": true,
   "workspaces": [
-    "client",
-    "server"
+    "/apps/client",
+    "/apps/server"
   ],
   "scripts": {
-    "dev": "concurrently \"cd client && npm run dev\" \"cd server && npm run dev\""
+    "dev": "concurrently \"cd apps/client && npm run dev\" \"cd apps/server && npm run dev\""
   },
   "keywords": [],
   "author": "",
