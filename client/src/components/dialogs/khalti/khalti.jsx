@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useEffect } from "react";
-import { toast } from "react-toastify";
+import toast from "react-hot-toast";
 import { useParams } from "react-router-dom";
 import KhaltiCheckout from "khalti-checkout-web";
 import { useDispatch, useSelector } from "react-redux";
@@ -32,7 +32,7 @@ const Khalti = () => {
                             "user_id": userData?._id
                         })
     
-                        if(status >= 300) return toast.warn('Something went wront!')
+                        if(status >= 300) return toast.error('Something went wront!')
                         else {
                             const donator = data.verified_payment.user.name;
                             const index = donator.lastIndexOf(' ');

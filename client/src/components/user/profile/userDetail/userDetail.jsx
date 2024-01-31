@@ -1,5 +1,5 @@
 import moment from 'moment';
-import { toast } from 'react-hot-toast';
+import toast from 'react-hot-toast';
 import { Tooltip } from '@mui/material';
 import { useEffect, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom';

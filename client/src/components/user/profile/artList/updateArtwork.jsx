@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { toast } from 'react-hot-toast';
+import toast from 'react-hot-toast';
 import { useDispatch, useSelector } from 'react-redux';
 
 // import redux actions
@@ -31,7 +31,7 @@ export default function UpdateArtwork({ currentArtwork }) {
 
     const updateArtworkHandler = () => {
         if (name === '' || price === '' || category === '' || description === '') {
-            return toast.warn('Please, fill in all the required fields.');
+            return toast.error('Please, fill in all the required fields.');
         }
 
         dispatch(updateArtwork({ artId: currentArtwork._id, name, price, discount, category, description }));

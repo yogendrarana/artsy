@@ -1,5 +1,5 @@
 import moment from 'moment';
-import { toast } from 'react-hot-toast';
+import toast from 'react-hot-toast';
 import { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';

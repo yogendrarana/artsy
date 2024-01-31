@@ -1,6 +1,6 @@
 import axios from 'axios';
 import { useState } from 'react';
-import { toast } from 'react-toastify';
+import toast from 'react-hot-toast';
 import {useParams} from "react-router-dom"
 
 // import css and components
@@ -29,7 +29,7 @@ const ResetPassword = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        if (!password || !confirmPassword) return toast.warn("Please, provide email!");
+        if (!password || !confirmPassword) return toast.error("Please, provide email!");
         handleResetPassword({password, confirmPassword, token})
     } 
 

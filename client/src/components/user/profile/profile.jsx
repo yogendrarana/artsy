@@ -1,4 +1,4 @@
-import { toast } from 'react-hot-toast'
+import toast from 'react-hot-toast'
 import { useEffect, useRef } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { NavLink, Outlet, useParams } from 'react-router-dom'

@@ -1,4 +1,4 @@
-import { toast } from 'react-toastify'
+import toast from 'react-hot-toast'
 import { io }  from 'socket.io-client'
 import { useEffect, useRef, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux';

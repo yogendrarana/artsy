@@ -1,6 +1,6 @@
 import axios from 'axios';
 import { useState } from 'react';
-import { toast } from 'react-hot-toast';
+import toast from 'react-hot-toast';
 
 
 // import css and components
@@ -30,7 +30,7 @@ const ChangePassword = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        if (!oldPassword || !newPassword) return toast.warn("Please, provide email!");
+        if (!oldPassword || !newPassword) return toast.error("Please, provide email!");
         handleChangePassword({oldPassword, newPassword})
     } 
 

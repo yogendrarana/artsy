@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { toast } from 'react-toastify';
+import toast from 'react-hot-toast';
 import { useNavigate } from 'react-router-dom';
 
 // import css and image
@@ -14,7 +14,7 @@ const Hero = () => {
     if (event.type === 'click' || (event.type === 'keydown' && event.key === 'Enter')) {
       if(keyword === ''){
         event.preventDefault(); // prevent page refresh
-        return toast.warn('Please enter a keyword first.');
+        return toast.error('Please enter a keyword first.');
       } else if (keyword.trim()) {
         navigate(`/arts/search?keyword=${keyword}`)
       }

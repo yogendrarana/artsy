@@ -1,4 +1,4 @@
-import { toast } from 'react-hot-toast'
+import toast from 'react-hot-toast'
 import { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
@@ -25,7 +25,7 @@ const Login = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        if (!email || !password) return toast.warn("Fields cannot be empty!");
+        if (!email || !password) return toast.error("Fields cannot be empty!");
         dispatch(loginUser({ email, password, remember }));
     }
 

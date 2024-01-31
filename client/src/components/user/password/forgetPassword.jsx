@@ -1,6 +1,6 @@
 import axios from 'axios';
 import { useState } from 'react';
-import { toast } from 'react-toastify';
+import toast from 'react-hot-toast';
 
 // import css and components
 import './forgetPassword.css';
@@ -25,7 +25,7 @@ const ForgetPassword = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        if (!email) return toast.warn("Please, provide email!");
+        if (!email) return toast.error("Please, provide email!");
         handleForgetPassword({email})
     } 
 
