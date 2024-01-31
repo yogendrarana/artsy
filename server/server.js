@@ -29,7 +29,7 @@ app.use(express.json({ limit: '50mb' }));
 app.use(express.urlencoded({ extended: true }));
 app.use(cors({
     credentials: true,
-    origin: ["http://localhost:3000", process.env.CLIENT_URL],
+    origin: ["http://localhost:5173", process.env.CLIENT_URL],
 }));
 
 // configuration of database, cloudinary
@@ -38,7 +38,7 @@ connectDatabase();
 configCloudinary();
 
 // routes
-app.get("/", (req, res) => { res.send("Hello from server"); })
+app.get("/", (req, res) => { res.send("Hello from server!"); })
 app.use("/api/v1", authRoutes)
 app.use("/api/v1", userRoutes)
 app.use("/api/v1", artRoutes)
@@ -52,5 +52,5 @@ app.use("/api/v1", subscriberRoutes)
 app.use(ErrorMiddleware);
 
 // server listening
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 8000;
 app.listen(PORT, () => console.log(`Listening in port ${PORT}`));
