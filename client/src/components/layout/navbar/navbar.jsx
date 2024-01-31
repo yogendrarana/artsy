@@ -98,7 +98,9 @@ const Navbar = ({ isAuthenticated }) => {
                     {/* {isAuthenticated && <ChatDialog />} */}
 
                     <div className="profileIcon" onClick={() => setAccountPopover(!accountPopover)}>
-                        {accountPopover ? <i className="fa-solid fa-xmark"></i> : <i className="fa-regular fa-user"></i>}
+                        {accountPopover ? 
+                            <i className="fa-solid fa-xmark"></i> : isAuthenticated ? <h4>{myData?.name.charAt(0)}</h4> : <i className="fa-regular fa-user"></i>}
+                                
 
                         <ul className={accountPopover ? "active" : ""}>
                             {!isAuthenticated &&
