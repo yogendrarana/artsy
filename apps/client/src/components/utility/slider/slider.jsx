@@ -1,4 +1,4 @@
-import {useRef} from 'react'
+import { useRef } from 'react'
 
 // import css and components
 import './slider.css'
@@ -14,17 +14,17 @@ import { Pagination } from "swiper";
 import "swiper/css";
 import 'swiper/css/pagination';
 
-const Slider = ({title, data}) => {
+const Slider = ({ title, data }) => {
     const swiperRef = useRef();
 
-    if(!data[0]){
+    if (!data[0]) {
         return
     }
 
     return (
         <div className='sliderContainer'>
             <h2>{title}</h2>
-           
+
             <div className="slider">
                 <i className="fa-solid fa-chevron-left" onClick={() => swiperRef.current.slidePrev()}></i>
 
@@ -34,19 +34,19 @@ const Slider = ({title, data}) => {
                     modules={[Pagination]}
                     slidesPerView={1}
                     spaceBetween={9}
-                    pagination={{clickable: true}}
-                    onSwiper={(swiper) => {swiperRef.current = swiper}}
+                    pagination={{ clickable: true }}
+                    onSwiper={(swiper) => { swiperRef.current = swiper }}
                     breakpoints={{
-                        576: {slidesPerView: 2, spaceBetween: 5},
-                        768: {slidesPerView: 3, spaceBetween: 10},
-                        1024: {slidesPerView: 4, spaceBetween: 20},
+                        576: { slidesPerView: 2, spaceBetween: 5 },
+                        768: { slidesPerView: 3, spaceBetween: 10 },
+                        1024: { slidesPerView: 4, spaceBetween: 20 },
                     }}
                 >
                     {
                         data.slice(0, 7).map((slide, index) => {
-                            return(
+                            return (
                                 <SwiperSlide key={index}>
-                                    <Card art={slide} title={title} style={{height: '30rem'}} />
+                                    <Card art={slide} title={title} style={{ height: '30rem' }} />
                                 </SwiperSlide>
                             )
                         })
@@ -64,4 +64,4 @@ const Slider = ({title, data}) => {
     )
 }
 
-export default Slider
+export default Slider;

@@ -1,11 +1,11 @@
-.sliderContainer{
+.sliderContainer {
     width: 100%;
     padding-top: 5rem;
     padding-bottom: 2.5rem;
     border-bottom: 1px solid #ededed;
 }
 
-.sliderContainer > h2{
+.sliderContainer>h2 {
     margin-bottom: 3rem;
     font-size: 3rem;
     font-family: 'Times New Roman', Times, serif;
@@ -14,24 +14,24 @@
 }
 
 /******************** Slides ********************/
-.sliderContainer > .slider{
+.sliderContainer>.slider {
     width: 100%;
     position: relative;
 }
 
-.sliderContainer > .slider > i{
+.sliderContainer>.slider>i {
     font-size: 3rem;
     cursor: pointer;
 }
 
-.sliderContainer > .slider > i:first-child{
+.sliderContainer>.slider>i:first-child {
     position: absolute;
     left: -4rem;
     top: 50%;
     transform: translateY(-125%);
 }
 
-.sliderContainer > .slider > i:last-child{
+.sliderContainer>.slider>i:last-child {
     position: absolute;
     right: -4rem;
     top: 50%;
@@ -39,34 +39,34 @@
 }
 
 /******************** Swiper ********************/
-.sliderContainer > .slider > .swiper{
+.sliderContainer>.slider>.swiper {
     padding-bottom: 5rem;
 }
 
 /******************** Navigators ********************/
-.sliderContainer > .navigators{
+.sliderContainer>.navigators {
     margin-top: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.sliderContainer > .navigators > i{
+.sliderContainer>.navigators>i {
     display: none;
 }
 
 /******************** Media Query ********************/
-  
-  /* large mobile screen */
-  @media (max-width: 576px) {
-    .sliderContainer > .slider > i{
+
+/* large mobile screen */
+@media (max-width: 576px) {
+    .sliderContainer>.slider>i {
         display: none;
     }
 
-    .sliderContainer > .navigators > i{
+    .sliderContainer>.navigators>i {
         height: 4rem;
         width: 4rem;
-        font-size: 1.5rem; 
+        font-size: 1.5rem;
         cursor: pointer;
         display: flex;
         justify-content: center;
@@ -74,8 +74,8 @@
         background-color: #faf4e8;
     }
 
-    .sliderContainer > .navigators > i:hover{
+    .sliderContainer>.navigators>i:hover {
         background-color: antiquewhite;
         transition: all 0.2s;
     }
-  }
+}

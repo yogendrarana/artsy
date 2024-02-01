@@ -2,8 +2,8 @@ import cors from "cors"
 import dotenv from 'dotenv'
 import express from 'express'
 import cookieParser from 'cookie-parser'
+import { connectDb } from './config/database.js'
 import { configSocket } from './config/socket.js'
-import { connectDatabase } from './config/database.js'
 import { configCloudinary } from './config/cloudinary.js'
 
 // import routes
@@ -33,8 +33,8 @@ app.use(cors({
 }));
 
 // configuration of database, cloudinary
+connectDb();
 configSocket();
-connectDatabase();
 configCloudinary();
 
 // routes

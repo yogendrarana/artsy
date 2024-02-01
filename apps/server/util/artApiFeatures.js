@@ -8,7 +8,7 @@ class ArtApiFeatures {
     search() {
         if (this.queryStr.keyword) {
             const keyword = new RegExp(this.queryStr.keyword, 'i');
-            this.query = this.query.find({ $or: [{ name: keyword }, { description: keyword }] });
+            this.query = this.query.find({ $or: [{ name: keyword }, { description: keyword }, { category: keyword }] });
         }
 
         if (this.queryStr.category) {
