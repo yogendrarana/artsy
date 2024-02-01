@@ -37,6 +37,10 @@ connectDb();
 configSocket();
 configCloudinary();
 
+// server listening
+const PORT = process.env.PORT || 8000;
+app.listen(PORT, () => console.log(`Listening in port ${PORT}`));
+
 // routes
 app.get("/", (req, res) => { res.send("Hello from server!"); })
 app.use("/api/v1", authRoutes)
@@ -50,7 +54,3 @@ app.use("/api/v1", subscriberRoutes)
 
 // error middleware
 app.use(ErrorMiddleware);
-
-// server listening
-const PORT = process.env.PORT || 8000;
-app.listen(PORT, () => console.log(`Listening in port ${PORT}`));
